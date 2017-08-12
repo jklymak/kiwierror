@@ -302,7 +302,7 @@ class LayoutBox(object):
             lb.width == self.width * width ,
             lb.height == self.height * height ]
         for c in cs:
-            self.solver.addConstraint(c)
+            self.solver.addConstraint((c | 'required'))
 
         return lb
 
