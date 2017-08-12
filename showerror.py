@@ -36,7 +36,7 @@ def plot_children(ax, box, level=0):
         plot_children(ax, child, level=level+1)
 
 #### Main routine
-fig0, axs = plt.subplots(2,6)
+fig0, axs = plt.subplots(2, 6)
 try:
     axs = axs.flatten()
 except:
